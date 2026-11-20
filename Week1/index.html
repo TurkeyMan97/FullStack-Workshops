@@ -3,9 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LearnSphere</title>
 </head>
 <body>
-    
+    <header>
+        <h1>LearnSphere</h1>
+        <p>Free, beginner-friendly learning resources for aspiring developers and computer science students.</p>
+
+        <nav aria-label="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#data-structures">Data Structures</a></li>
+                <li><a href="#study-tips">Study Tips</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+            <section>
+                <h2>Welcome to LearnSphere</h2>
+                <p>
+                    Whether you are writing your first line of code or preparing for advanced
+                    coursework, LearnSphere breaks big topics into small, clear lessons. Pick a
+                    topic below, follow the guided steps, and build something real along the way.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="web-development" aria-labelledby="web-heading">
+                <h2 id="web-heading">Web Development Basics</h2>
+                <p>Every website you visit is built from three core technologies working together.</p>
+
+            <article>
+                <header>
+                    <h3>Lesson 1: Understanding HTML</h3>
+                    <p><small>Level: Beginner &bull; Reading time: 5 minutes</small></p>
+                </header>
+
+                <p> HTML (HyperText Markup Language) gives a webpage its structure. It uses
+                <em>elements</em> written with tags to describe headings, paragraphs, links,
+                images, lists, and more. Semantic elements such as
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> tell browsers and
+                screen readers what each part of the page means.
+                </p>
+
+                <figure>
+                    <pre>+----------------------------------+
+                        | &lt;header&gt;                         |
+                        +----------------------------------+
+                        | &lt;nav&gt;                            |
+                        +----------------------------------+
+                        | &lt;main&gt;                           |
+                        +----------------------------------+
+                        | &lt;aside&gt;                          |
+                        +----------------------------------+
+                        | &lt;footer&gt;                         |
+                        +----------------------------------+</pre>
+                    <figcaption>
+                        <strong>Figure 1:</strong> A typical semantic page layout, showing where each structural element belongs.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Lesson 2: The Three Pillars of the Web</h3>
+                    <p><small>Level: Beginner &bull; Reading time: 4 minutes</small></p>
+                </header>
+                <table>
+                    <caption>How HTML, CSS, and JavaScript differ</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Technology</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Analogy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HTML</th>
+                            <td>Structure and content</td>
+                            <td>The skeleton of a house</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CSS</th>
+                                <td>Presentation and layout</td>
+                                <td>Paint, furniture, and decoration</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript</th>
+                                <td>Behavior and interactivity</td>
+                                <td>Electricity and plumbing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="python" aria-labelledby="python-heading">
+            <h2 id="python-heading">Python Programming</h2>
+            <p>Python is a readable, versatile language used in web development, automation, data science, and more.</p>
+
+            <article>
+                <header>
+                    <h3>Lesson 3: Variables and Control Flow</h3>
+                    <p><small>Level: Beginner &bull; Reading time: 6 minutes</small></p>
+                </header>
+                    <p>A <dfn>variable</dfn> stores a value so you can use it later. Control flow
+                        statements such as <code>if</code>, <code>for</code>, and <code>while</code>
+                        let your program make decisions and repeat actions.
+                    </p>
+                    <figure>
+                        <pre><code>score = 72
+
+                        if score &gt;= 50:
+                            print("You passed!")
+                        else:
+                            ("Keep practicing.")
+
+                         for number in range(1, 4):
+                            print("Attempt", number)</code></pre>
+
+                        <figcaption><strong>Figure 2:</strong> A short Python example combining a variable, a conditional, and a loop.</figcaption>
+                    </figure>
+                    <p><strong>Try it yourself:</strong></p>
+                    <ol>
+                        <li>Change <code>score</code> to a value below 50 and predict the output.</li>
+                        <li>Change the <code>range</code> so the loop runs five times.</li>
+                        <li>Add an <code>elif</code> branch that prints a message for scores of 90 or higher.</li>
+                    </ol>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Lesson 4: Project Idea &mdash; A Number Guessing Game</h3>
+                    <p><small>Level: Beginner &bull; Build time: 45 minutes</small></p>
+                </header>
+                <p>Practice what you have learned by building a small game. Your program should:</p>
+                <ul>
+                    <li>Pick a random number between 1 and 100.</li>
+                    <li>Ask the player for guesses and respond with &ldquo;higher&rdquo; or &ldquo;lower&rdquo;.</li>
+                    <li>Count the number of attempts and display it at the end.</li>
+                    <li>Offer to play again.</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="data-structures" aria-labelledby="ds-heading">
+            <h2 id="ds-heading">Data Structures &amp; Algorithms</h2>
+            <p>Choosing the right way to organize data makes programs faster and easier to reason about.</p>
+
+            <article>
+                <header>
+                    <h3>Lesson 5: Common Data Structures at a Glance</h3>
+                    <p><small>Level: Intermediate &bull; Reading time: 8 minutes</small></p>
+                </header>
+                <dl>
+                    <dt>Array / List</dt>
+                        <dd>An ordered collection with fast access by position (index).</dd>
+
+                    <dt>Stack</dt>
+                        <dd>Last in, first out (LIFO). Think of a pile of plates; used for undo features and function calls.</dd>
+
+                    <dt>Queue</dt>
+                        <dd>First in, first out (FIFO). Think of a line at a shop; used in task scheduling.</dd>
+
+                    <dt>Hash Table / Dictionary</dt>
+                        <dd>Stores key&ndash;value pairs for very fast lookups.</dd>
+
+                    <dt>Tree</dt>
+                        <dd>A hierarchy of connected nodes, such as a file system or a family tree.</dd>
+                </dl>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Lesson 6: Why Algorithm Speed Matters</h3>
+                    <p><small>Level: Intermediate &bull; Reading time: 5 minutes</small></p>
+                </header>
+
+                <p>Big-O notation describes how an algorithm&rsquo;s running time grows as the input
+                grows. Here is a quick comparison of common growth rates:
+                </p>
+
+                <table>
+                    <caption>Common time complexities</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Notation</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>O(1)</td><td>Constant</td><td>Reading an array element by index</td></tr>
+                        <tr><td>O(log n)</td><td>Logarithmic</td><td>Binary search</td></tr>
+                        <tr><td>O(n)</td><td>Linear</td><td>Scanning a list once</td></tr>
+                        <tr><td>O(n log n)</td><td>Linearithmic</td><td>Merge sort</td></tr>
+                        <tr><td>O(n&sup2;)</td><td>Quadratic</td><td>Nested loops over the same list</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <hr>
+
+
+
+    </main>
+
+    <aside aria-label="Secondary information">
+        <section aria-labelledby="progress-heading">
+            <h2 id="progress-heading">Your Learning Progress</h2>
+            <p><label for="p-web">Web Development</label><br><progress id="p-web" value="70" max="100">70%</progress></p>
+            <p><label for="p-py">Python</label><br><progress id="p-py" value="45" max="100">45%</progress></p>
+            <p><label for="p-ds">Data Structures</label><br><progress id="p-ds" value="20" max="100">20%</progress></p>
+        </section>
+
+        <section aria-labelledby="events-heading">
+            <h2 id="events-heading">Upcoming Events</h2>
+      <ul>
+        <li><time datetime="2026-11-25">Nov 25</time> &ndash; Live Q&amp;A: Getting started with Python</li>
+        <li><time datetime="2026-11-28">Nov 28</time> &ndash; Workshop: Build your first webpage</li>
+        <li><time datetime="2026-12-05">Dec 5</time> &ndash; Study group: Data structures review</li>
+      </ul>
+    </section>
+
+    <section id="resources" aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Helpful Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">Official Python Tutorial</a></li>
+        <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git Documentation</a></li>
+        <li><a href="https://visualgo.net/" target="_blank" rel="noopener">VisuAlgo (algorithm visualizations)</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="glossary-heading">
+      <h2 id="glossary-heading">Quick Glossary</h2>
+      <dl>
+        <dt>Syntax</dt>
+        <dd>The rules for writing valid code in a language.</dd>
+        <dt>Debugging</dt>
+        <dd>Finding and fixing errors in a program.</dd>
+        <dt>Repository</dt>
+        <dd>A folder tracked by version control that stores your project history.</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading">Weekly Newsletter</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="news-email">Email address:</label><br>
+          <input type="email" id="news-email" name="news-email" required>
+        </p>
+        <p><button type="submit">Subscribe</button></p>
+      </form>
+    </section>
+  </aside>
+
+    <hr>
+
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#home">Back to top</a></li>
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#data-structures">Data Structures</a></li>
+                <li><a href="#study-tips">Study Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <address>
+            Questions? Email <a href="mailto:hello@learnsphere.example">hello@learnsphere.example</a>
+        </address>
+        <p><small>&copy; 2026 LearnSphere. All rights reserved.</small></p>
+    </footer>
+
 </body>
 </html>
